@@ -2,6 +2,7 @@
 import Logo from '../../assets/website/logo.png';
 import { FaCaretDown } from 'react-icons/fa';
 import { FaCartShopping } from 'react-icons/fa6';
+import DarkMode from './DarkMode';
 
 const Menu = [
   {
@@ -45,6 +46,9 @@ const Navbar = () => {
             {/* menu section */}
             <div className=" flex items-center justify-between gap-4 font-semibold">
               <ul className="hidden sm:flex items-center gap-4">
+                <div>
+                  <DarkMode />
+                </div>
                 {Menu.map((menu) => (
                   <li key={menu.id}>
                     <a
@@ -84,7 +88,7 @@ const Navbar = () => {
               </ul>
               <button className=" bg-gradient-to-r from-primary to to-secondary px-4 py-1 rounded-full flex items-center gap-3">
                 Order
-                <FaCartShopping className='text-xl  drop-shadow-sm cursor-pointer hover:scale-175 duration-300' />
+                <FaCartShopping className="text-xl  drop-shadow-sm cursor-pointer hover:scale-175 duration-300" />
               </button>
             </div>
           </div>
