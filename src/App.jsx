@@ -6,6 +6,7 @@ import Banner from './components/Banner/Banner';
 import BestBooks from './components/BestBooks/BestBooks';
 import Hero from './components/Hero/Hero';
 import Navbar from './components/Navbar/Navbar';
+import Testimonial from './components/Testimanial/Testimonial';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Banner />
       <AppStoreBanner />
       <AllBooks />
+      <Testimonial />
     </div>
   );
 };
