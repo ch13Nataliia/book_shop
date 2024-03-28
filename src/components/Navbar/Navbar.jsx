@@ -44,11 +44,12 @@ const Navbar = () => {
               </a>
             </div>
             {/* menu section */}
+
             <div className=" flex items-center justify-between gap-4 font-semibold">
+              <div>
+                <DarkMode />
+              </div>
               <ul className="hidden sm:flex items-center gap-4">
-                <div>
-                  <DarkMode />
-                </div>
                 {Menu.map((menu) => (
                   <li key={menu.id}>
                     <a
