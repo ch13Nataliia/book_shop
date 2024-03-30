@@ -63,7 +63,7 @@ const Testimonial = () => {
 
   return (
     <>
-      <div>
+      <div className='pb-10'>
         <div className="container">
           {/* header */}
           <div className="text-center mb-20 max-w-[400px] mx-auto">
@@ -82,7 +82,7 @@ const Testimonial = () => {
           <div>
             <Slider {...settings}>
               {testimonialData.map((data) => (
-                <div key={data.id}>
+                <div key={data.id} className='my-6'>
                   <div className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-6 rounded-xl dark:bg-gray-800 bg-primary/10 relative">
                     <div>
                       <img
