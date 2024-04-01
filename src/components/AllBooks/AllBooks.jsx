@@ -54,7 +54,10 @@ const AllBooks = () => {
       <div className="py-10">
         <div className="container placeholder-gray-400">
           {/* header */}
-          <div className="text-center mb-20 max-w-[400px] mx-auto">
+          <div
+            data-aos="slide-up"
+            className="text-center mb-20 max-w-[400px] mx-auto"
+          >
             <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
               Best Books
             </p>
@@ -67,7 +70,7 @@ const AllBooks = () => {
             </p>
           </div>
           {/* card */}
-          <div>
+          <div     data-aos='slide-up'>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 place-items-center ">
               {BooksData.map((data) => (
                 <div key={data.id} className="space-y-3">
@@ -93,7 +96,7 @@ const AllBooks = () => {
           <div className="flex items-center justify-center">
             <button
               className="text-center cursor-pointer mt-10 bg-primary p-2 rounded-full tex-white"
-              onClick={() => console.log("clicked")}
+              onClick={() => console.log('clicked')}
             >
               View All Books
             </button>

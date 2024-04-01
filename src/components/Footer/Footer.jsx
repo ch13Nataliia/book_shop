@@ -29,13 +29,13 @@ const FooterLinks = [
 const Footer = () => {
   return (
     <>
-      <div>
+      <div className="bg-gray-100 dark:bg-gray-950">
         <div className="container">
           <div className="grid md:grid-cols-3 py-5">
             {/* company details */}
             <div className="flex flex-col py-8 px-4">
               <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3">
-                Dook Store
+                Book Store
               </h1>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
@@ -74,7 +74,7 @@ const Footer = () => {
                   <h1 className="sm:text-xl font-bold sm:text-left text-justify mb-3">
                     Important Links
                   </h1>
-                  <ul className='flex flex-col gap-3'>
+                  <ul className="flex flex-col gap-3">
                     {FooterLinks.map((data) => (
                       <>
                         <li
@@ -94,7 +94,7 @@ const Footer = () => {
                   <h1 className="sm:text-xl font-bold sm:text-left text-justify mb-3">
                     Important Links
                   </h1>
-                  <ul className='flex flex-col gap-3'>
+                  <ul className="flex flex-col gap-3">
                     {FooterLinks.map((data) => (
                       <>
                         <li
@@ -109,12 +109,13 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
+
               <div>
                 <div className="py-8 px-4">
                   <h1 className="sm:text-xl font-bold sm:text-left text-justify mb-3">
                     Important Links
                   </h1>
-                  <ul className='flex flex-col gap-3'>
+                  <ul className="flex flex-col gap-3">
                     {FooterLinks.map((data) => (
                       <>
                         <li
@@ -129,9 +130,19 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              
+
+
             </div>
           </div>
+          
+              {/* copyright section */}
+              <div>
+                <div className="border-t-2 border-gray-300/50">
+                  <p className="text-center py-10">
+                    Copyright &copy; 2022. All rights reserved by TCJ
+                  </p>
+                </div>
+              </div>
         </div>
       </div>
     </>

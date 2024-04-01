@@ -28,9 +28,10 @@ const ServicesData = [
   },
 ];
 
-const BestBooks = () => {
+const BestBooks = ({ handleOrderPopup }) => {
   return (
     <>
+      <span id="services"></span>
       <div className="py-10">
         <div className="container">
           {/* Header */}
@@ -47,11 +48,14 @@ const BestBooks = () => {
             </p>
           </div>
           {/* card */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-5 place-items-center">
+          <div className="grid grid-cols-1 gap-16 sm:grid-cols-2 sm:gap-16 md:grid-cols-3 md:gap-5 place-items-center">
             {ServicesData.map((book) => (
               <>
-                <div className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary dark:hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]">
-                  <div className="h-[100px]">
+                <div 
+                className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary dark:hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]">
+                  <div 
+                  data-aos="zoom-in"
+                   className="h-[100px]">
                     <img
                       src={book.img}
                       alt="bookImg"
@@ -59,7 +63,7 @@ const BestBooks = () => {
                     />
                   </div>
                   <div className="p-4 text-center">
-                    <div className="w-full flex items-center justify-center">
+                    <div className="w-full flex items-center justify-center gap-1">
                       <FaStar className="text-yellow-500" />
                       <FaStar className="text-yellow-500" />
                       <FaStar className="text-yellow-500" />
@@ -70,10 +74,11 @@ const BestBooks = () => {
                       {book.description}
                     </p>
 
-                    <button 
-                    className="bg-primary to-secondary p-2 rounded-full duration-200 hover:scale-105
+                    <button
+                      onClick={handleOrderPopup}
+                      className="bg-primary to-secondary p-2 rounded-full duration-200 hover:scale-105
                     group-hover:bg-white group-hover:text-green-800"
-                    onClick={() => {}}>
+                    >
                       Order Now
                     </button>
                   </div>

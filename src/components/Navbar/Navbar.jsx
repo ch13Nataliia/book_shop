@@ -13,7 +13,7 @@ const Menu = [
   {
     id: 2,
     name: 'Best Sellers',
-    link: '/#services',
+    link: '/services',
   },
 ];
 
@@ -31,7 +31,7 @@ const DropdownLinks = [
     link: '/#',
   },
 ];
-const Navbar = () => {
+const Navbar = ({ handleOrderPopup }) => {
   return (
     <>
       <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200">
@@ -87,7 +87,10 @@ const Navbar = () => {
                   </div>
                 </li>
               </ul>
-              <button className=" bg-gradient-to-r from-primary to to-secondary px-4 py-1 rounded-full flex items-center gap-3">
+              <button
+                onClick={handleOrderPopup}
+                className=" bg-gradient-to-r from-primary to to-secondary px-4 py-1 rounded-full flex items-center gap-3"
+              >
                 Order
                 <FaCartShopping className="text-xl  drop-shadow-sm cursor-pointer hover:scale-175 duration-300" />
               </button>
