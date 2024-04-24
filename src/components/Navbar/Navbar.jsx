@@ -1,7 +1,8 @@
 // import React from 'react'
-import Logo from '../../assets/website/logo.png';
 import { FaCaretDown } from 'react-icons/fa';
 import { FaCartShopping } from 'react-icons/fa6';
+import { GiBookshelf } from "react-icons/gi";
+
 import DarkMode from './DarkMode';
 
 const Menu = [
@@ -38,8 +39,8 @@ const Navbar = ({ handleOrderPopup }) => {
         <div className="container py-3 sm:py-0">
           <div className="flex items-center justify-between">
             <div>
-              <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-4">
-                <img src={Logo} alt="Logo" className="w-10" />
+              <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-4 text-blue-500">
+                <GiBookshelf size={30} className='text-blue-500'/>
                 Books
               </a>
             </div>

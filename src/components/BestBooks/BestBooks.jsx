@@ -7,22 +7,23 @@ import { FaStar } from 'react-icons/fa';
 const ServicesData = [
   {
     id: 1,
-    img: Img1,
-    title: 'His Life',
+    img: Img2,
+    title: "Salem's lot",
     description:
       'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 2,
-    img: Img2,
-    title: "Who's there",
+    img: Img1,
+    title: 'The Famous five',
     description:
       'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
+
   {
     id: 3,
     img: Img3,
-    title: 'Lost Boy',
+    title: 'Hobbit',
     description:
       'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
@@ -50,12 +51,9 @@ const BestBooks = ({ handleOrderPopup }) => {
           {/* card */}
           <div className="grid grid-cols-1 gap-16 sm:grid-cols-2 sm:gap-16 md:grid-cols-3 md:gap-5 place-items-center">
             {ServicesData.map((book) => (
-              <>
-                <div 
-                className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary dark:hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]">
-                  <div 
-                  data-aos="zoom-in"
-                   className="h-[100px]">
+              <div key={book.id}>
+                <div className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary/50 dark:hover:bg-primary/30 hover:text-white relative shadow-xl duration-high group max-w-[300px]">
+                  <div data-aos="zoom-in" className="h-[100px]">
                     <img
                       src={book.img}
                       alt="bookImg"
@@ -83,7 +81,7 @@ const BestBooks = ({ handleOrderPopup }) => {
                     </button>
                   </div>
                 </div>
-              </>
+              </div>
             ))}
           </div>
         </div>

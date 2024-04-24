@@ -2,49 +2,71 @@
 import Book1 from '../../assets/books/book2.jpg';
 import Book2 from '../../assets/books/book1.jpg';
 import Book3 from '../../assets/books/book3.jpg';
+import Book4 from '../../assets/books/book4.jpg';
+import Book5 from '../../assets/books/book5.jpg';
+import Book6 from '../../assets/books/book6.jpg';
+import Book7 from '../../assets/books/book7.jpg';
+import Book8 from '../../assets/books/book8.jpg';
 import { FaStar } from 'react-icons/fa';
+
+
+
 const BooksData = [
   {
     id: 1,
     img: Book1,
-    title: "Who's there",
+    title: "The famous five",
     rating: 5.0,
-    author: 'Someone',
+    author: 'G.Blyton',
   },
   {
     id: 2,
     img: Book2,
-    title: 'His Life',
+    title: "Salem's lot",
     rating: 4.5,
-    author: 'John',
+    author: 'S.King',
   },
   {
     id: 3,
     img: Book3,
-    title: 'Lost boys',
+    title: 'Hobbit',
     rating: 4.7,
-    author: 'Lost Girl',
+    author: 'J.Tolkien',
   },
   {
     id: 4,
-    img: Book2,
-    title: 'His Life',
+    img: Book4,
+    title: 'Abroad in Japan',
     rating: 4.4,
-    author: 'Someone',
+    author: 'C.Broad',
   },
   {
     id: 5,
-    img: Book1,
-    title: "Who's There",
+    img: Book5,
+    title: "The Lost Bookshop",
     rating: 4.5,
-    author: 'Someone',
+    author: 'E.Woods',
   },
   {
     id: 6,
-    img: Book3,
-    title: 'Lost boys',
+    img: Book6,
+    title: 'Homecoming',
     rating: 4.7,
-    author: 'Lost Girl',
+    author: 'K.Morton',
+  },
+  {
+    id: 7,
+    img: Book7,
+    title: 'The Thursday Murder Club',
+    rating: 4.7,
+    author: 'R.Osman',
+  },
+  {
+    id: 8,
+    img: Book8,
+    title: 'The Silent Patient',
+    rating: 4.7,
+    author: 'A.Michaelides',
   },
 ];
 

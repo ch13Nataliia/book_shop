@@ -4,35 +4,35 @@ import Book2 from '../../assets/books/book2.jpg';
 import Book3 from '../../assets/books/book3.jpg';
 import Vector from '../../assets/website/blue-pattern.png';
 
-const ImageList = [
-  {
+const ImageList = [  {
     id: 1,
-    img: Book2,
-    title: 'His Life will forever be changed',
+    img: Book1,
+    title: "Salem's lot",
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias molestiae, placeat tempore veniam nobis doloribus minus culpa porro eaque commodi assumenda reprehenderit. Veritatis a neque laboriosam error facere, aliquid veniam.',
   },
   {
     id: 2,
-    img: Book1,
-    title: "Who's there",
+    img: Book2,
+    title: 'The famous five',
     description:
-      ' Who there Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias molestiae, placeat tempore veniam nobis doloribus minus culpa porro eaque commodi assumenda reprehenderit. Veritatis a neque laboriosam error facere, aliquid veniam.',
+      "The holidays are always full of excitement for the Five, whether they're rowing out to Kirrin Island, exploring dungeons or going camping. There are bound to be smugglers to catch, secrets to uncover and enemies to outwit.",
   },
+
   {
     id: 3,
     img: Book3,
-    title: 'Lost boy',
+    title: 'Hobbit',
     description:
       'Lost Boy Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias molestiae, placeat tempore veniam nobis doloribus minus culpa porro eaque commodi assumenda reprehenderit. Veritatis a neque laboriosam error facere, aliquid veniam.',
   },
 ];
 
 const Hero = ({handleOrderPopup}) => {
-  const [imageId, setImageId] = useState(Book2);
-  const [title, setTitle] = useState('His Life will forever be Changed');
+  const [imageId, setImageId] = useState(Book1);
+  const [title, setTitle] = useState("Salem's Lot");
   const [description, setDescription] = useState(
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloreaccusamus amet molestiae a ea suscipit tempore iure debitis corrupti veritatis atque distinctio? Lorem ipsu',
+    "Thousands of miles away from the small township of 'Salem's Lot, two terrified people, a man and a boy, still share the secrets of those clapboard houses and tree-lined streets. They must return to 'Salem's Lot for a final confrontation with the unspeakable evil that lives on in the town.",
   );
   const bgImage = {
     backgroundImage: `url(${Vector})`,
@@ -63,7 +63,7 @@ const Hero = ({handleOrderPopup}) => {
                 data-aos-delay="100"
                 className="  text-right text-sm bg-primary-800 p-3"
               >
-                by Author
+                S.King
               </p>
               <p
                 data-aos="zoom-out"
@@ -93,7 +93,7 @@ const Hero = ({handleOrderPopup}) => {
                   data-aos-once="true"
                   src={imageId}
                   alt="book2"
-                  className=" h-[300px] w-[300px] sm:h-[450px] sm:w-[450px] sm:scale-125 object-containt mx-auto"
+                  className=" h-[300px] w-[250px] sm:h-[450px] sm:w-[400px] sm:scale-125 object-containt mx-auto"
                 />
               </div>
               {/* other images */}

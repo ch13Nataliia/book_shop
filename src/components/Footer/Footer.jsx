@@ -10,18 +10,22 @@ import {
 
 const FooterLinks = [
   {
+    id: 1,
     title: 'Home',
     link: '/#',
   },
   {
+    id: 2,
     title: 'About',
     link: '/#about',
   },
   {
+    id: 3,
     title: 'Contact',
     link: '/#contact',
   },
   {
+    id: 4,
     title: 'Blog',
     link: '/#blog',
   },
@@ -76,15 +80,15 @@ const Footer = () => {
                   </h1>
                   <ul className="flex flex-col gap-3">
                     {FooterLinks.map((data) => (
-                      <>
+                      <div key={data.id}>
                         <li
-                          key={data.name}
-                          className="cutsor-pointer hover:translate-x-1 duration-300 hover:text-primary space-x-1 text-gray-500"
+                          
+                          className="cursor-pointer hover:translate-x-1 duration-300 hover:text-primary space-x-1 text-gray-500"
                         >
                           <span>&#11162;</span>
                           <span>{data.title}</span>
                         </li>
-                      </>
+                      </div>
                     ))}
                   </ul>
                 </div>
@@ -96,15 +100,15 @@ const Footer = () => {
                   </h1>
                   <ul className="flex flex-col gap-3">
                     {FooterLinks.map((data) => (
-                      <>
+                      <div key={data.id}>
                         <li
-                          key={data.name}
+                          
                           className="cutsor-pointer hover:translate-x-1 duration-300 hover:text-primary space-x-1 text-gray-500"
                         >
                           <span>&#11162;</span>
                           <span>{data.title}</span>
                         </li>
-                      </>
+                      </div>
                     ))}
                   </ul>
                 </div>
@@ -117,15 +121,15 @@ const Footer = () => {
                   </h1>
                   <ul className="flex flex-col gap-3">
                     {FooterLinks.map((data) => (
-                      <>
+                      <div key={data.id}>
                         <li
-                          key={data.name}
+                          
                           className="cutsor-pointer hover:translate-x-1 duration-300 hover:text-primary space-x-1 text-gray-500"
                         >
                           <span>&#11162;</span>
                           <span>{data.title}</span>
                         </li>
-                      </>
+                      </div>
                     ))}
                   </ul>
                 </div>
